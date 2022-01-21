@@ -1,0 +1,15 @@
+[project]
+name = "clarity-nft"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+analysis = ["check_checker"]
+costs_version = 2
+[contracts.my-own-nft]
+path = "contracts/my-nft.clar"
+depends_on = ["nft-trait"]
+
+[contracts.nft-trait]
+path = "contracts/nft-trait.clar"
+depends_on = []
